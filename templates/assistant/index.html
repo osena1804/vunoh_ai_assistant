@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vunoh Global — Diaspora Assistant</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">🌍 Vunoh Global</div>
+      <p class="tagline">Your trusted assistant for services back home</p>
+    </header>
+
+    <!-- Chat area -->
+    <main class="chat-box" id="chatBox">
+      <div class="message bot-message">
+        <span>👋 Hello! I'm your Vunoh assistant. How can I help you today?<br><br>
+        You can ask me to:<br>
+        💸 Send money to someone back home<br>
+        🏠 Hire a local service (cleaner, lawyer, errand runner)<br>
+        📄 Verify a document (land title, ID, certificate)<br>
+        ✈️ Arrange an airport transfer
+        </span>
+      </div>
+    </main>
+
+    <!-- Input area -->
+    <div class="input-area">
+      <textarea
+        id="userInput"
+        placeholder="Type your request here... e.g. I need to send KES 15,000 to my mother in Kisumu"
+        rows="2"
+      ></textarea>
+      <button id="sendBtn" onclick="sendRequest()">Send ➜</button>
+    </div>
+
+    <!-- Loading spinner -->
+    <div class="loading" id="loading">
+      <div class="spinner"></div>
+      <span>Processing your request...</span>
+    </div>
+
+    <!-- Result card -->
+    <div class="result-card" id="resultCard" style="display:none;">
+
+      <div class="result-section">
+        <h3>📋 Task Created</h3>
+        <div class="task-meta" id="taskMeta"></div>
+      </div>
+
+      <div class="result-section">
+        <h3>🪜 Steps to Complete</h3>
+        <ol id="taskSteps"></ol>
+      </div>
+
+      <div class="result-section">
+        <h3>💬 Your Confirmation Messages</h3>
+        <div class="messages-grid">
+          <div class="msg-card whatsapp">
+            <div class="msg-label">WhatsApp</div>
+            <div class="msg-content" id="msgWhatsapp"></div>
+          </div>
+          <div class="msg-card email">
+            <div class="msg-label">Email</div>
+            <div class="msg-content" id="msgEmail"></div>
+          </div>
+          <div class="msg-card sms">
+            <div class="msg-label">SMS</div>
+            <div class="msg-content" id="msgSms"></div>
+          </div>
+        </div>
+      </div>
+
+      <a href="/dashboard/" class="dashboard-btn">View All Tasks →</a>
+
+    </div>
+
+  </div>
+
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

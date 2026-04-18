@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vunoh Global — Task Dashboard</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+</head>
+<body>
+
+  <div class="container">
+
+    <header class="header">
+      <div class="logo">🌍 Vunoh Global</div>
+      <p class="tagline">Task Management Dashboard</p>
+      <a href="/" class="new-task-btn">+ New Request</a>
+    </header>
+
+    <!-- Stats bar -->
+    <div class="stats-bar">
+      <div class="stat-item">
+        <div class="stat-number">{{ total_tasks }}</div>
+        <div class="stat-label">Total Tasks</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number pending-color">{{ pending_count }}</div>
+        <div class="stat-label">Pending</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number inprogress-color">{{ inprogress_count }}</div>
+        <div class="stat-label">In Progress</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number completed-color">{{ completed_count }}</div>
+        <div class="stat-label">Completed</div>
+      </div>
+    </div>
+
+    <!-- Tasks table -->
+    <div class="table-wrapper">
+      {% if tasks %}
+      <table class="tasks-table">
+        <thead>
+          <tr>
+            <th>Task Code</th>
+            <th>Request</th>
+            <th>Intent</th>
+            <th>Risk</th>
+            <th>Team</th>
+            <th>Status</th>
+            <th>Created</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for task in tasks %}
+          <tr id="row-{{ task.task_code }}">
+            <td><span class="task-code">{{ task.task_code }}</span></td>
+            <td class="request-text">{{ task.original_request|truncatechars:60 }}</td>
+            <td><span class="intent-badge">{{ task.get_intent_display }}</span></td>
+            <td>
+              <span class="risk-badge risk-{{ task.risk_label }}">
+                {{ task.risk_score }}/100 {{ task.risk_label }}
+              </span>
+            </td>
+            <td><span class="team-badge">{{ task.assigned_team }}</span></td>
+            <td>
+              <span class="status-badge status-{{ task.status }}" id="status-{{ task.task_code }}">
+                {{ task.get_status_display }}
+              </span>
+            </td>
+            <td class="date-text">{{ task.created_at|date:"M d, Y H:i" }}</td>
+            <td>
+                <select class="status-select" title="Update task status" onchange="updateStatus('{{ task.task_code }}', this.value)">                <option value="pending" {% if task.status == 'pending' %}selected{% endif %}>Pending</option>
+                <option value="in_progress" {% if task.status == 'in_progress' %}selected{% endif %}>In Progress</option>
+                <option value="completed" {% if task.status == 'completed' %}selected{% endif %}>Completed</option>
+              </select>
+            </td>
+          </tr>
+          <!-- Expandable messages row -->
+          <tr class="messages-row" id="messages-{{ task.task_code }}">
+            <td colspan="8">
+              <div class="messages-expand">
+                {% for message in task.messages.all %}
+                <div class="msg-card {{ message.channel }}">
+                  <div class="msg-label">{{ message.channel|upper }}</div>
+                  <div class="msg-content">{{ message.content }}</div>
+                </div>
+                {% endfor %}
+              </div>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% else %}
+      <div class="empty-state">
+        <p>🌍 No tasks yet.</p>
+        <a href="/" class="new-task-btn">Submit your first request</a>
+      </div>
+      {% endif %}
+    </div>
+
+  </div>
+
+  <script src="{% static 'js/dashboard.js' %}"></script>
+</body>
+</html>

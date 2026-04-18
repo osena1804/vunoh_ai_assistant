@@ -1,0 +1,21 @@
+# Virtual environment
+venv/
+
+# Environment variables (NEVER commit this API key)
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Django
+*.sqlite3
+db.sqlite3
+
+# VS Code
+.vscode/
+
+# Windows
+Thumbs.db
+desktop.ini

@@ -1,0 +1,166 @@
+.new-task-btn {
+  display: inline-block;
+  background: #1b4f72;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.new-task-btn:hover { background: #154060; }
+
+.stats-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.stat-item {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.stat-number {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1b4f72;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: #888;
+  margin-top: 4px;
+}
+
+.pending-color   { color: #b07d00 !important; }
+.inprogress-color { color: #1b4f72 !important; }
+.completed-color  { color: #1a7a4a !important; }
+
+.table-wrapper {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  overflow-x: auto;
+}
+
+.tasks-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.tasks-table th {
+  text-align: left;
+  padding: 10px 12px;
+  font-size: 12px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid #eaf2ff;
+}
+
+.tasks-table td {
+  padding: 12px;
+  border-bottom: 1px solid #f0f4f8;
+  vertical-align: middle;
+}
+
+.tasks-table tr:last-child td { border-bottom: none; }
+
+.task-code {
+  font-family: monospace;
+  font-weight: 700;
+  color: #1b4f72;
+  font-size: 13px;
+}
+
+.request-text {
+  color: #444;
+  max-width: 200px;
+}
+
+.date-text { color: #888; font-size: 12px; }
+
+/* Badges */
+.intent-badge {
+  background: #eaf2ff;
+  color: #1b4f72;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.team-badge {
+  background: #f0f4f8;
+  color: #444;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.risk-badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.risk-low    { background: #e9fbe9; color: #1a7a4a; }
+.risk-medium { background: #fff4e5; color: #b07d00; }
+.risk-high   { background: #fdecea; color: #c0392b; }
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-pending     { background: #fff4e5; color: #b07d00; }
+.status-in_progress { background: #eaf2ff; color: #1b4f72; }
+.status-completed   { background: #e9fbe9; color: #1a7a4a; }
+
+/* Status dropdown */
+.status-select {
+  padding: 6px 10px;
+  border: 1.5px solid #d0dce8;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  outline: none;
+  background: white;
+}
+
+.status-select:focus { border-color: #1b4f72; }
+
+/* Messages expand row */
+.messages-row { display: none; }
+.messages-row.open { display: table-row; }
+
+.messages-expand {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding: 12px 0;
+}
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #888;
+  font-size: 16px;
+}
