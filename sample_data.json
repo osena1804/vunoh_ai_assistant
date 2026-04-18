@@ -1,0 +1,898 @@
+[
+  {
+    "task_code": "VG-524AFC10",
+    "intent": "airport_transfer",
+    "original_request": "Please arrange airport pickup for my father arriving at JKIA on Saturday at 3pm",
+    "entities": {
+      "recipient": "father",
+      "location": "JKIA",
+      "date": "Saturday 3pm",
+      "urgency": "medium"
+    },
+    "risk_score": 20,
+    "risk_label": "low",
+    "status": "in_progress",
+    "assigned_team": "logistics",
+    "created_at": "2026-04-18 21:53:30.299242+00:00",
+    "steps": [
+      {
+        "step_number": 1,
+        "description": "Confirm flight details and arrival time"
+      },
+      {
+        "step_number": 2,
+        "description": "Assign driver for JKIA pickup on Saturday"
+      },
+      {
+        "step_number": 3,
+        "description": "Share driver details with customer and recipient"
+      },
+      {
+        "step_number": 4,
+        "description": "Complete pickup and confirm safe arrival"
+      }
+    ],
+    "messages": [
+      {
+        "channel": "whatsapp",
+        "content": "Airport pickup arranged for your father at JKIA on Saturday at 3pm!\nTask code: VG-524AFC10\nWe will keep you updated!"
+      },
+      {
+        "channel": "email",
+        "content": "Subject: Airport Transfer Request - JKIA\n\nDear Customer,\nWe have arranged an airport pickup for your father at JKIA on Saturday.\nTask Code: VG-524AFC10"
+      },
+      {
+        "channel": "sms",
+        "content": "Vunoh: JKIA pickup Saturday 3pm confirmed. Code: VG-524AFC10"
+      }
+    ]
+  },
+  {
+    "task_code": "VG-99F7D0E6",
+    "intent": "hire_service",
+    "original_request": "I need a lawyer to help with a property dispute in Nakuru",
+    "entities": {
+      "service_type": "lawyer",
+      "location": "Nakuru",
+      "urgency": "high"
+    },
+    "risk_score": 40,
+    "risk_label": "medium",
+    "status": "pending",
+    "assigned_team": "legal",
+    "created_at": "2026-04-18 21:53:30.225207+00:00",
+    "steps": [
+      {
+        "step_number": 1,
+        "description": "Identify qualified property lawyers in Nakuru"
+      },
+      {
+        "step_number": 2,
+        "description": "Brief lawyer on the dispute details"
+      },
+      {
+        "step_number": 3,
+        "description": "Schedule consultation with customer"
+      },
+      {
+        "step_number": 4,
+        "description": "Provide legal representation and updates"
+      }
+    ],
+    "messages": [
+      {
+        "channel": "whatsapp",
+        "content": "We have received your request for a property lawyer in Nakuru.\nTask code: VG-99F7D0E6\nOur legal team is on it!"
+      },
+      {
+        "channel": "email",
+        "content": "Subject: Legal Service Request - Property Dispute\n\nDear Customer,\nWe acknowledge your request for legal assistance in Nakuru.\nTask Code: VG-99F7D0E6"
+      },
+      {
+        "channel": "sms",
+        "content": "Vunoh: Lawyer search for Nakuru property dispute started. Code: VG-99F7D0E6"
+      }
+    ]
+  },
+  {
+    "task_code": "VG-B2C0C43C",
+    "intent": "hire_service",
+    "original_request": "Can someone clean my apartment in Westlands on Friday",
+    "entities": {
+      "service_type": "cleaning",
+      "location": "Westlands",
+      "date": "Friday",
+      "urgency": "low"
+    },
+    "risk_score": 15,
+    "risk_label": "low",
+    "status": "completed",
+    "assigned_team": "operations",
+    "created_at": "2026-04-18 21:53:30.158939+00:00",
+    "steps": [
+      {
+        "step_number": 1,
+        "description": "Match customer with available cleaners in Westlands"
+      },
+      {
+        "step_number": 2,
+        "description": "Confirm Friday schedule with service provider"
+      },
+      {
+        "step_number": 3,
+        "description": "Send cleaner details to customer"
+      },
+      {
+        "step_number": 4,
+        "description": "Complete service and get sign-off"
+      }
+    ],
+    "messages": [
+      {
+        "channel": "whatsapp",
+        "content": "Great! We are finding a cleaner for your Westlands apartment on Friday.\nTask code: VG-B2C0C43C\nWe will confirm the details soon!"
+      },
+      {
+        "channel": "email",
+        "content": "Subject: Cleaning Service Request\n\nDear Customer,\nWe have received your request for apartment cleaning in Westlands on Friday.\nTask Code: VG-B2C0C43C"
+      },
+      {
+        "channel": "sms",
+        "content": "Vunoh: Cleaner booking for Westlands Friday confirmed. Code: VG-B2C0C43C"
+      }
+    ]
+  },
+  {
+    "task_code": "VG-74979CDA",
+    "intent": "verify_document",
+    "original_request": "Please verify my land title deed for the plot in Karen",
+    "entities": {
+      "document_type": "land title deed",
+      "location": "Karen",
+      "urgency": "medium"
+    },
+    "risk_score": 55,
+    "risk_label": "medium",
+    "status": "pending",
+    "assigned_team": "legal",
+    "created_at": "2026-04-18 21:53:30.083341+00:00",
+    "steps": [
+      {
+        "step_number": 1,
+        "description": "Receive and log the land title document"
+      },
+      {
+        "step_number": 2,
+        "description": "Assign to legal team for review"
+      },
+      {
+        "step_number": 3,
+        "description": "Verify authenticity with land registry authorities"
+      },
+      {
+        "step_number": 4,
+        "description": "Prepare verification report"
+      },
+      {
+        "step_number": 5,
+        "description": "Send results to customer"
+      }
+    ],
+    "messages": [
+      {
+        "channel": "whatsapp",
+        "content": "Hello! We have received your land title verification request for Karen.\nTask code: VG-74979CDA\nOur legal team will handle this carefully."
+      },
+      {
+        "channel": "email",
+        "content": "Subject: Document Verification Request\n\nDear Customer,\nWe have received your request to verify a land title deed in Karen.\nTask Code: VG-74979CDA\nOur legal team will be in touch shortly."
+      },
+      {
+        "channel": "sms",
+        "content": "Vunoh: Land title verification started. Code: VG-74979CDA"
+      }
+    ]
+  },
+  {
+    "task_code": "VG-0A52A869",
+    "intent": "send_money",
+    "original_request": "I need to send KES 15,000 to my mother in Kisumu urgently",
+    "entities": {
+      "amount": 15000,
+      "currency": "KES",
+      "recipient": "mother",
+      "location": "Kisumu",
+      "urgency": "high"
+    },
+    "risk_score": 60,
+    "risk_label": "high",
+    "status": "in_progress",
+    "assigned_team": "finance",
+    "created_at": "2026-04-18 21:53:30.011002+00:00",
+    "steps": [
+      {
+        "step_number": 1,
+        "description": "Verify customer identity and payment method"
+      },
+      {
+        "step_number": 2,
+        "description": "Confirm recipient details and M-Pesa number"
+      },
+      {
+        "step_number": 3,
+        "description": "Initiate KES 15,000 transfer"
+      },
+      {
+        "step_number": 4,
+        "description": "Send confirmation and transaction ID to customer"
+      }
+    ],
+    "messages": [
+      {
+        "channel": "whatsapp",
+        "content": "Hi! We have received your urgent request to send KES 15,000 to your mother in Kisumu.\nYour task code is VG-0A52A869.\nWe are on it!"
+      },
+      {
+        "channel": "email",
+        "content": "Subject: Urgent Money Transfer Request\n\nDear Customer,\nWe acknowledge your request to transfer KES 15,000 to Kisumu.\nTask Code: VG-0A52A869\nOur finance team will process this shortly."
+      },
+      {
+        "channel": "sms",
+        "content": "Vunoh: Transfer KES 15,000 to Kisumu in progress. Code: VG-0A52A869"
+      }
+    ]
+  },
+  {
+    "task_code": "VG-D902439D",
+    "intent": "airport_transfer",
+    "original_request": "Please arrange airport pickup for my father arriving at JKIA on Saturday at 3pm",
+    "entities": {
+      "recipient": "father",
+      "location": "JKIA",
+      "date": "Saturday 3pm",
+      "urgency": "medium"
+    },
+    "risk_score": 20,
+    "risk_label": "low",
+    "status": "in_progress",
+    "assigned_team": "logistics",
+    "created_at": "2026-04-18 21:47:33.573120+00:00",
+    "steps": [
+      {
+        "step_number": 1,
+        "description": "Confirm flight details and arrival time"
+      },
+      {
+        "step_number": 2,
+        "description": "Assign driver for JKIA pickup on Saturday"
+      },
+      {
+        "step_number": 3,
+        "description": "Share driver details with customer and recipient"
+      },
+      {
+        "step_number": 4,
+        "description": "Complete pickup and confirm safe arrival"
+      }
+    ],
+    "messages": [
+      {
+        "channel": "whatsapp",
+        "content": "Airport pickup arranged for your father at JKIA on Saturday at 3pm!\nTask code: VG-D902439D\nWe will keep you updated!"
+      },
+      {
+        "channel": "email",
+        "content": "Subject: Airport Transfer Request - JKIA\n\nDear Customer,\nWe have arranged an airport pickup for your father at JKIA on Saturday.\nTask Code: VG-D902439D"
+      },
+      {
+        "channel": "sms",
+        "content": "Vunoh: JKIA pickup Saturday 3pm confirmed. Code: VG-D902439D"
+      }
+    ]
+  },
+  {
+    "task_code": "VG-BC52BDB8",
+    "intent": "hire_service",
+    "original_request": "I need a lawyer to help with a property dispute in Nakuru",
+    "entities": {
+      "service_type": "lawyer",
+      "location": "Nakuru",
+      "urgency": "high"
+    },
+    "risk_score": 40,
+    "risk_label": "medium",
+    "status": "pending",
+    "assigned_team": "legal",
+    "created_at": "2026-04-18 21:47:33.499616+00:00",
+    "steps": [
+      {
+        "step_number": 1,
+        "description": "Identify qualified property lawyers in Nakuru"
+      },
+      {
+        "step_number": 2,
+        "description": "Brief lawyer on the dispute details"
+      },
+      {
+        "step_number": 3,
+        "description": "Schedule consultation with customer"
+      },
+      {
+        "step_number": 4,
+        "description": "Provide legal representation and updates"
+      }
+    ],
+    "messages": [
+      {
+        "channel": "whatsapp",
+        "content": "We have received your request for a property lawyer in Nakuru.\nTask code: VG-BC52BDB8\nOur legal team is on it!"
+      },
+      {
+        "channel": "email",
+        "content": "Subject: Legal Service Request - Property Dispute\n\nDear Customer,\nWe acknowledge your request for legal assistance in Nakuru.\nTask Code: VG-BC52BDB8"
+      },
+      {
+        "channel": "sms",
+        "content": "Vunoh: Lawyer search for Nakuru property dispute started. Code: VG-BC52BDB8"
+      }
+    ]
+  },
+  {
+    "task_code": "VG-402C64D6",
+    "intent": "hire_service",
+    "original_request": "Can someone clean my apartment in Westlands on Friday",
+    "entities": {
+      "service_type": "cleaning",
+      "location": "Westlands",
+      "date": "Friday",
+      "urgency": "low"
+    },
+    "risk_score": 15,
+    "risk_label": "low",
+    "status": "completed",
+    "assigned_team": "operations",
+    "created_at": "2026-04-18 21:47:33.439373+00:00",
+    "steps": [
+      {
+        "step_number": 1,
+        "description": "Match customer with available cleaners in Westlands"
+      },
+      {
+        "step_number": 2,
+        "description": "Confirm Friday schedule with service provider"
+      },
+      {
+        "step_number": 3,
+        "description": "Send cleaner details to customer"
+      },
+      {
+        "step_number": 4,
+        "description": "Complete service and get sign-off"
+      }
+    ],
+    "messages": [
+      {
+        "channel": "whatsapp",
+        "content": "Great! We are finding a cleaner for your Westlands apartment on Friday.\nTask code: VG-402C64D6\nWe will confirm the details soon!"
+      },
+      {
+        "channel": "email",
+        "content": "Subject: Cleaning Service Request\n\nDear Customer,\nWe have received your request for apartment cleaning in Westlands on Friday.\nTask Code: VG-402C64D6"
+      },
+      {
+        "channel": "sms",
+        "content": "Vunoh: Cleaner booking for Westlands Friday confirmed. Code: VG-402C64D6"
+      }
+    ]
+  },
+  {
+    "task_code": "VG-21D5B100",
+    "intent": "verify_document",
+    "original_request": "Please verify my land title deed for the plot in Karen",
+    "entities": {
+      "document_type": "land title deed",
+      "location": "Karen",
+      "urgency": "medium"
+    },
+    "risk_score": 55,
+    "risk_label": "medium",
+    "status": "pending",
+    "assigned_team": "legal",
+    "created_at": "2026-04-18 21:47:33.372074+00:00",
+    "steps": [
+      {
+        "step_number": 1,
+        "description": "Receive and log the land title document"
+      },
+      {
+        "step_number": 2,
+        "description": "Assign to legal team for review"
+      },
+      {
+        "step_number": 3,
+        "description": "Verify authenticity with land registry authorities"
+      },
+      {
+        "step_number": 4,
+        "description": "Prepare verification report"
+      },
+      {
+        "step_number": 5,
+        "description": "Send results to customer"
+      }
+    ],
+    "messages": [
+      {
+        "channel": "whatsapp",
+        "content": "Hello! We have received your land title verification request for Karen.\nTask code: VG-21D5B100\nOur legal team will handle this carefully."
+      },
+      {
+        "channel": "email",
+        "content": "Subject: Document Verification Request\n\nDear Customer,\nWe have received your request to verify a land title deed in Karen.\nTask Code: VG-21D5B100\nOur legal team will be in touch shortly."
+      },
+      {
+        "channel": "sms",
+        "content": "Vunoh: Land title verification started. Code: VG-21D5B100"
+      }
+    ]
+  },
+  {
+    "task_code": "VG-3BB7FB14",
+    "intent": "send_money",
+    "original_request": "I need to send KES 15,000 to my mother in Kisumu urgently",
+    "entities": {
+      "amount": 15000,
+      "currency": "KES",
+      "recipient": "mother",
+      "location": "Kisumu",
+      "urgency": "high"
+    },
+    "risk_score": 60,
+    "risk_label": "high",
+    "status": "in_progress",
+    "assigned_team": "finance",
+    "created_at": "2026-04-18 21:47:33.295712+00:00",
+    "steps": [
+      {
+        "step_number": 1,
+        "description": "Verify customer identity and payment method"
+      },
+      {
+        "step_number": 2,
+        "description": "Confirm recipient details and M-Pesa number"
+      },
+      {
+        "step_number": 3,
+        "description": "Initiate KES 15,000 transfer"
+      },
+      {
+        "step_number": 4,
+        "description": "Send confirmation and transaction ID to customer"
+      }
+    ],
+    "messages": [
+      {
+        "channel": "whatsapp",
+        "content": "Hi! We have received your urgent request to send KES 15,000 to your mother in Kisumu.\nYour task code is VG-3BB7FB14.\nWe are on it!"
+      },
+      {
+        "channel": "email",
+        "content": "Subject: Urgent Money Transfer Request\n\nDear Customer,\nWe acknowledge your request to transfer KES 15,000 to Kisumu.\nTask Code: VG-3BB7FB14\nOur finance team will process this shortly."
+      },
+      {
+        "channel": "sms",
+        "content": "Vunoh: Transfer KES 15,000 to Kisumu in progress. Code: VG-3BB7FB14"
+      }
+    ]
+  },
+  {
+    "task_code": "VG-C2C2CC84",
+    "intent": "airport_transfer",
+    "original_request": "Please arrange airport pickup for my father arriving at JKIA on Saturday at 3pm",
+    "entities": {
+      "recipient": "father",
+      "location": "JKIA",
+      "date": "Saturday 3pm",
+      "urgency": "medium"
+    },
+    "risk_score": 20,
+    "risk_label": "low",
+    "status": "in_progress",
+    "assigned_team": "logistics",
+    "created_at": "2026-04-18 21:36:38.995387+00:00",
+    "steps": [
+      {
+        "step_number": 1,
+        "description": "Confirm flight details and arrival time"
+      },
+      {
+        "step_number": 2,
+        "description": "Assign driver for JKIA pickup on Saturday"
+      },
+      {
+        "step_number": 3,
+        "description": "Share driver details with customer and recipient"
+      },
+      {
+        "step_number": 4,
+        "description": "Complete pickup and confirm safe arrival"
+      }
+    ],
+    "messages": [
+      {
+        "channel": "whatsapp",
+        "content": "✈️ Airport pickup arranged for your father at JKIA on Saturday at 3pm!\nTask code: VG-C2C2CC84\nWe will keep you updated! 🚗"
+      },
+      {
+        "channel": "email",
+        "content": "Subject: Airport Transfer Request - JKIA\n\nDear Customer,\nWe have arranged an airport pickup for your father at JKIA on Saturday.\nTask Code: VG-C2C2CC84"
+      },
+      {
+        "channel": "sms",
+        "content": "Vunoh: JKIA pickup Saturday 3pm confirmed. Code: VG-C2C2CC84"
+      }
+    ]
+  },
+  {
+    "task_code": "VG-A33B512F",
+    "intent": "hire_service",
+    "original_request": "I need a lawyer to help with a property dispute in Nakuru",
+    "entities": {
+      "service_type": "lawyer",
+      "location": "Nakuru",
+      "urgency": "high"
+    },
+    "risk_score": 40,
+    "risk_label": "medium",
+    "status": "pending",
+    "assigned_team": "legal",
+    "created_at": "2026-04-18 21:36:38.924884+00:00",
+    "steps": [
+      {
+        "step_number": 1,
+        "description": "Identify qualified property lawyers in Nakuru"
+      },
+      {
+        "step_number": 2,
+        "description": "Brief lawyer on the dispute details"
+      },
+      {
+        "step_number": 3,
+        "description": "Schedule consultation with customer"
+      },
+      {
+        "step_number": 4,
+        "description": "Provide legal representation and updates"
+      }
+    ],
+    "messages": [
+      {
+        "channel": "whatsapp",
+        "content": "⚖️ We have received your request for a property lawyer in Nakuru.\nTask code: VG-A33B512F\nOur legal team is on it! 💪"
+      },
+      {
+        "channel": "email",
+        "content": "Subject: Legal Service Request - Property Dispute\n\nDear Customer,\nWe acknowledge your request for legal assistance in Nakuru.\nTask Code: VG-A33B512F"
+      },
+      {
+        "channel": "sms",
+        "content": "Vunoh: Lawyer search for Nakuru property dispute started. Code: VG-A33B512F"
+      }
+    ]
+  },
+  {
+    "task_code": "VG-1BB3F6B4",
+    "intent": "hire_service",
+    "original_request": "Can someone clean my apartment in Westlands on Friday",
+    "entities": {
+      "service_type": "cleaning",
+      "location": "Westlands",
+      "date": "Friday",
+      "urgency": "low"
+    },
+    "risk_score": 15,
+    "risk_label": "low",
+    "status": "completed",
+    "assigned_team": "operations",
+    "created_at": "2026-04-18 21:36:38.860818+00:00",
+    "steps": [
+      {
+        "step_number": 1,
+        "description": "Match customer with available cleaners in Westlands"
+      },
+      {
+        "step_number": 2,
+        "description": "Confirm Friday schedule with service provider"
+      },
+      {
+        "step_number": 3,
+        "description": "Send cleaner details to customer"
+      },
+      {
+        "step_number": 4,
+        "description": "Complete service and get sign-off"
+      }
+    ],
+    "messages": [
+      {
+        "channel": "whatsapp",
+        "content": "🏠 Great! We are finding a cleaner for your Westlands apartment on Friday.\nTask code: VG-1BB3F6B4\nWe will confirm the details soon! 😊"
+      },
+      {
+        "channel": "email",
+        "content": "Subject: Cleaning Service Request\n\nDear Customer,\nWe have received your request for apartment cleaning in Westlands on Friday.\nTask Code: VG-1BB3F6B4"
+      },
+      {
+        "channel": "sms",
+        "content": "Vunoh: Cleaner booking for Westlands Friday confirmed. Code: VG-1BB3F6B4"
+      }
+    ]
+  },
+  {
+    "task_code": "VG-953BAA3D",
+    "intent": "verify_document",
+    "original_request": "Please verify my land title deed for the plot in Karen",
+    "entities": {
+      "document_type": "land title deed",
+      "location": "Karen",
+      "urgency": "medium"
+    },
+    "risk_score": 55,
+    "risk_label": "medium",
+    "status": "pending",
+    "assigned_team": "legal",
+    "created_at": "2026-04-18 21:36:38.790328+00:00",
+    "steps": [
+      {
+        "step_number": 1,
+        "description": "Receive and log the land title document"
+      },
+      {
+        "step_number": 2,
+        "description": "Assign to legal team for review"
+      },
+      {
+        "step_number": 3,
+        "description": "Verify authenticity with land registry authorities"
+      },
+      {
+        "step_number": 4,
+        "description": "Prepare verification report"
+      },
+      {
+        "step_number": 5,
+        "description": "Send results to customer"
+      }
+    ],
+    "messages": [
+      {
+        "channel": "whatsapp",
+        "content": "📄 Hello! We have received your land title verification request for Karen.\nTask code: VG-953BAA3D\nOur legal team will handle this carefully. ✅"
+      },
+      {
+        "channel": "email",
+        "content": "Subject: Document Verification Request\n\nDear Customer,\nWe have received your request to verify a land title deed in Karen.\nTask Code: VG-953BAA3D\nOur legal team will be in touch shortly."
+      },
+      {
+        "channel": "sms",
+        "content": "Vunoh: Land title verification started. Code: VG-953BAA3D"
+      }
+    ]
+  },
+  {
+    "task_code": "VG-9B769F13",
+    "intent": "send_money",
+    "original_request": "I need to send KES 15,000 to my mother in Kisumu urgently",
+    "entities": {
+      "amount": 15000,
+      "currency": "KES",
+      "recipient": "mother",
+      "location": "Kisumu",
+      "urgency": "high"
+    },
+    "risk_score": 60,
+    "risk_label": "high",
+    "status": "in_progress",
+    "assigned_team": "finance",
+    "created_at": "2026-04-18 21:36:38.719363+00:00",
+    "steps": [
+      {
+        "step_number": 1,
+        "description": "Verify customer identity and payment method"
+      },
+      {
+        "step_number": 2,
+        "description": "Confirm recipient details and M-Pesa number"
+      },
+      {
+        "step_number": 3,
+        "description": "Initiate KES 15,000 transfer"
+      },
+      {
+        "step_number": 4,
+        "description": "Send confirmation and transaction ID to customer"
+      }
+    ],
+    "messages": [
+      {
+        "channel": "whatsapp",
+        "content": "👋 Hi! We have received your urgent request to send KES 15,000 to your mother in Kisumu.\nYour task code is VG-9B769F13.\nWe are on it! 🚀"
+      },
+      {
+        "channel": "email",
+        "content": "Subject: Urgent Money Transfer Request\n\nDear Customer,\nWe acknowledge your request to transfer KES 15,000 to Kisumu.\nTask Code: VG-9B769F13\nOur finance team will process this shortly."
+      },
+      {
+        "channel": "sms",
+        "content": "Vunoh: Transfer KES 15,000 to Kisumu in progress. Code: VG-9B769F13"
+      }
+    ]
+  },
+  {
+    "task_code": "VG-6DED172A",
+    "intent": "hire_service",
+    "original_request": "Can someone clean my apartment in Westlands on Friday?",
+    "entities": {
+      "amount": null,
+      "currency": null,
+      "recipient": null,
+      "location": "Westlands",
+      "service_type": "apartment cleaning",
+      "document_type": null,
+      "urgency": "medium",
+      "date": "Friday",
+      "additional_notes": null
+    },
+    "risk_score": 25,
+    "risk_label": "low",
+    "status": "pending",
+    "assigned_team": "operations",
+    "created_at": "2026-04-18 13:48:16.051025+00:00",
+    "steps": [
+      {
+        "step_number": 1,
+        "description": "Match a suitable cleaning service provider for Westlands."
+      },
+      {
+        "step_number": 2,
+        "description": "Confirm the provider's availability for apartment cleaning on Friday."
+      },
+      {
+        "step_number": 3,
+        "description": "Obtain customer approval for the selected provider and estimated cost."
+      },
+      {
+        "step_number": 4,
+        "description": "Coordinate and oversee the cleaning service delivery."
+      },
+      {
+        "step_number": 5,
+        "description": "Conduct a post-service quality check and confirm completion."
+      }
+    ],
+    "messages": [
+      {
+        "channel": "whatsapp",
+        "content": "Hey there! 👋 We've received your request to clean your apartment in Westlands this Friday. We're on it! \n\nWe'll get back to you shortly with provider options and a quote. Your task code is VG-6DED172A. \n\nCheers! 🧹"
+      },
+      {
+        "channel": "email",
+        "content": "Subject: Your Vunoh Global Service Request - Apartment Cleaning VG-6DED172A\n\nDear Customer,\n\nThank you for choosing Vunoh Global. We have received your request for apartment cleaning services in Westlands on Friday.\n\nOur team is currently matching you with a suitable and vetted service provider. We will send you details, including the service provider's profile and an estimated quote, for your approval very soon.\n\nYour dedicated task code for this request is VG-6DED172A. Please use this code for any future correspondence regarding this service.\n\nWe appreciate your trust in Vunoh Global.\n\nSincerely,\nThe Vunoh Global Team"
+      },
+      {
+        "channel": "sms",
+        "content": "Vunoh Global: Your apartment cleaning request for Westlands on Friday is in! We're matching providers. Task code: VG-6DED172A. We'll update you soon."
+      }
+    ]
+  },
+  {
+    "task_code": "VG-339205D1",
+    "intent": "verify_document",
+    "original_request": "Please verify my land title deed for the plot in Karen",
+    "entities": {
+      "amount": null,
+      "currency": null,
+      "recipient": null,
+      "location": "Karen",
+      "service_type": null,
+      "document_type": "land title deed",
+      "urgency": "low",
+      "date": null,
+      "additional_notes": null
+    },
+    "risk_score": 45,
+    "risk_label": "medium",
+    "status": "pending",
+    "assigned_team": "legal",
+    "created_at": "2026-04-18 13:36:50.874897+00:00",
+    "steps": [
+      {
+        "step_number": 1,
+        "description": "Receive land title deed document from customer."
+      },
+      {
+        "step_number": 2,
+        "description": "Submit document to legal team for initial review and authenticity check."
+      },
+      {
+        "step_number": 3,
+        "description": "Liaise with relevant land registry authorities for official verification."
+      },
+      {
+        "step_number": 4,
+        "description": "Compile detailed verification report including any discrepancies or confirmations."
+      },
+      {
+        "step_number": 5,
+        "description": "Provide the customer with the official verification report and findings."
+      }
+    ],
+    "messages": [
+      {
+        "channel": "whatsapp",
+        "content": "Hello! 👋 We've received your request to verify your land title deed for the plot in Karen. We'll start processing it right away.\n\nYour task code is: VG-339205D1.\nWe'll keep you updated! 🚀"
+      },
+      {
+        "channel": "email",
+        "content": "Subject: Your Document Verification Request - Task Code: VG-339205D1\n\nDear Customer,\n\nWe confirm receipt of your request to verify your land title deed for the plot located in Karen.\n\nYour assigned task code is: VG-339205D1.\n\nOur team is now initiating the verification process, which includes a thorough review by our legal experts and an official check with the relevant land registry authorities. We will keep you informed of the progress and provide you with a comprehensive report upon completion.\n\nThank you for choosing Vunoh Global.\n\nSincerely,\nThe Vunoh Global Team"
+      },
+      {
+        "channel": "sms",
+        "content": "Vunoh Global: We've received your request to verify your land title deed for Karen. Task code: VG-339205D1. We'll update you soon!"
+      }
+    ]
+  },
+  {
+    "task_code": "VG-B4B94328",
+    "intent": "send_money",
+    "original_request": "I need to send KES 15,000 to my mother in Kisumu urgently.",
+    "entities": {
+      "amount": 15000,
+      "currency": "KES",
+      "recipient": "mother",
+      "location": "Kisumu",
+      "service_type": null,
+      "document_type": null,
+      "urgency": "high",
+      "date": null,
+      "additional_notes": null
+    },
+    "risk_score": 60,
+    "risk_label": "high",
+    "status": "pending",
+    "assigned_team": "finance",
+    "created_at": "2026-04-18 13:32:18.592420+00:00",
+    "steps": [
+      {
+        "step_number": 1,
+        "description": "Verify customer identity and payment method."
+      },
+      {
+        "step_number": 2,
+        "description": "Confirm recipient details (full name, M-Pesa number) with the customer."
+      },
+      {
+        "step_number": 3,
+        "description": "Initiate KES 15,000 transfer to recipient's M-Pesa."
+      },
+      {
+        "step_number": 4,
+        "description": "Send transfer confirmation and transaction ID to customer."
+      }
+    ],
+    "messages": [
+      {
+        "channel": "whatsapp",
+        "content": "Hi there! 👋 We've received your urgent request to send KES 15,000 to your mother in Kisumu. \n\nWe're on it! Your task code is VG-B4B94328. We'll keep you updated every step of the way. 🚀"
+      },
+      {
+        "channel": "email",
+        "content": "Subject: Vunoh Global - Urgent Money Transfer Request - Task Code: VG-B4B94328\n\nDear Customer,\n\nWe acknowledge receipt of your urgent request to transfer KES 15,000 to your mother in Kisumu.\n\nYour task code is VG-B4B94328. We are processing this with high priority and will notify you upon completion.\n\nThank you for choosing Vunoh Global.\n\nSincerely,\nThe Vunoh Global Team"
+      },
+      {
+        "channel": "sms",
+        "content": "Your urgent request to send KES 15,000 to Kisumu is being processed. Task code: VG-B4B94328. We will send a confirmation shortly."
+      }
+    ]
+  }
+]
