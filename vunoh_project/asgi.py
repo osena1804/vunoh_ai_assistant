@@ -1,5 +1,5 @@
 """
-ASGI config for vunoh_project project.
+ASGI config for vunoh_project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 

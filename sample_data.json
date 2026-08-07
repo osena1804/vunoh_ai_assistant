@@ -777,11 +777,11 @@
       },
       {
         "channel": "email",
-        "content": "Subject: Your Vunoh Global Service Request - Apartment Cleaning VG-6DED172A\n\nDear Customer,\n\nThank you for choosing Vunoh Global. We have received your request for apartment cleaning services in Westlands on Friday.\n\nOur team is currently matching you with a suitable and vetted service provider. We will send you details, including the service provider's profile and an estimated quote, for your approval very soon.\n\nYour dedicated task code for this request is VG-6DED172A. Please use this code for any future correspondence regarding this service.\n\nWe appreciate your trust in Vunoh Global.\n\nSincerely,\nThe Vunoh Global Team"
+        "content": "Subject: Your Diaspora Connect Service Request - Apartment Cleaning VG-6DED172A\n\nDear Customer,\n\nThank you for choosing Diaspora Connect. We have received your request for apartment cleaning services in Westlands on Friday.\n\nOur team is currently matching you with a suitable and vetted service provider. We will send you details, including the service provider's profile and an estimated quote, for your approval very soon.\n\nYour dedicated task code for this request is VG-6DED172A. Please use this code for any future correspondence regarding this service.\n\nWe appreciate your trust in Diaspora Connect.\n\nSincerely,\nThe Diaspora Connect Team"
       },
       {
         "channel": "sms",
-        "content": "Vunoh Global: Your apartment cleaning request for Westlands on Friday is in! We're matching providers. Task code: VG-6DED172A. We'll update you soon."
+        "content": "Diaspora Connect: Your apartment cleaning request for Westlands on Friday is in! We're matching providers. Task code: VG-6DED172A. We'll update you soon."
       }
     ]
   },
@@ -834,11 +834,11 @@
       },
       {
         "channel": "email",
-        "content": "Subject: Your Document Verification Request - Task Code: VG-339205D1\n\nDear Customer,\n\nWe confirm receipt of your request to verify your land title deed for the plot located in Karen.\n\nYour assigned task code is: VG-339205D1.\n\nOur team is now initiating the verification process, which includes a thorough review by our legal experts and an official check with the relevant land registry authorities. We will keep you informed of the progress and provide you with a comprehensive report upon completion.\n\nThank you for choosing Vunoh Global.\n\nSincerely,\nThe Vunoh Global Team"
+        "content": "Subject: Your Document Verification Request - Task Code: VG-339205D1\n\nDear Customer,\n\nWe confirm receipt of your request to verify your land title deed for the plot located in Karen.\n\nYour assigned task code is: VG-339205D1.\n\nOur team is now initiating the verification process, which includes a thorough review by our legal experts and an official check with the relevant land registry authorities. We will keep you informed of the progress and provide you with a comprehensive report upon completion.\n\nThank you for choosing Diaspora Connect.\n\nSincerely,\nThe Diaspora Connect Team"
       },
       {
         "channel": "sms",
-        "content": "Vunoh Global: We've received your request to verify your land title deed for Karen. Task code: VG-339205D1. We'll update you soon!"
+        "content": "Diaspora Connectl: We've received your request to verify your land title deed for Karen. Task code: VG-339205D1. We'll update you soon!"
       }
     ]
   },
@@ -887,7 +887,7 @@
       },
       {
         "channel": "email",
-        "content": "Subject: Vunoh Global - Urgent Money Transfer Request - Task Code: VG-B4B94328\n\nDear Customer,\n\nWe acknowledge receipt of your urgent request to transfer KES 15,000 to your mother in Kisumu.\n\nYour task code is VG-B4B94328. We are processing this with high priority and will notify you upon completion.\n\nThank you for choosing Vunoh Global.\n\nSincerely,\nThe Vunoh Global Team"
+        "content": "Subject: Diaspora Connect - Urgent Money Transfer Request - Task Code: VG-B4B94328\n\nDear Customer,\n\nWe acknowledge receipt of your urgent request to transfer KES 15,000 to your mother in Kisumu.\n\nYour task code is VG-B4B94328. We are processing this with high priority and will notify you upon completion.\n\nThank you for choosing Diaspora Connect.\n\nSincerely,\nThe Diaspora Connect Team"
       },
       {
         "channel": "sms",

@@ -1,6 +1,6 @@
-# Vunoh Global — AI Diaspora Assistant
+# Diaspora Connect — AI Diaspora Assistant
 
-An AI-powered platform that helps Kenyans living abroad initiate and track services back home — including money transfers, local service hiring, and document verification.
+An AI-powered platform that helps Kenyans living abroad initiate and track services back home - including money transfers, local service hiring, and document verification.
 
 ## Tech Stack
 - **Backend:** Django (Python)
@@ -22,7 +22,7 @@ An AI-powered platform that helps Kenyans living abroad initiate and track servi
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/osena1804/vunoh_ai_assistant.git
+git clone https://github.com/osena1804/Diaspora-Connect.git
 cd vunoh_ai_assistant
 ```
 
@@ -61,8 +61,11 @@ I designed the system prompt to be strict and output-focused only. The most impo
 
 I included specific step templates for each intent (send_money, hire_service, verify_document, airport_transfer) so the steps are always relevant and not generic. I also forced the urgency field to always be set based on keywords in the message.
 
+### Payment & Escrow Model Decision
+For service hiring requests (such as plumbing, painting, or contractor services), I modeled a **50% deposit / 50% completion** escrow payment structure. Holding 50% of funds in escrow protects diaspora users from contractor fraud while giving local workers the initial capital required for materials and labor.
+
 ### One decision where I changed what the AI suggested
-Claude initially suggested using OpenAI for the AI brain. I decided to use Google Gemini instead because it has a genuinely free tier that does not require a credit card, which is more practical for an internship project and for other developers who want to run this locally. I also switched the model from gemini-1.5-flash to gemini-2.5-flash after discovering the older model was deprecated.
+Claude initially suggested using OpenAI for the AI brain. I decided to use Google Gemini instead because it has a genuinely free tier that does not require a credit card, which is more practical for a demo project and for other developers who want to run this locally. I also switched the model from gemini-1.5-flash to gemini-2.5-flash after discovering the older model was deprecated.
 
 ### One thing that did not work as expected
 The .env file kept getting committed even after I added it to .gitignore. I knew the basics of secret management, but I didn’t realize GitHub blocks pushes if a secret appears anywhere in the commit history. Once a secret is committed, Git keeps tracking it unless the history is rewritten.

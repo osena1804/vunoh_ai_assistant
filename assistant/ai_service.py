@@ -9,7 +9,7 @@ genai.configure(api_key=os.getenv('GEMINI_API_KEY'))
 model = genai.GenerativeModel('gemini-2.5-flash')
 
 SYSTEM_PROMPT = """
-You are an AI assistant for Vunoh Global, a platform that helps Kenyans in the diaspora manage tasks back home.
+You are an AI assistant for Diaspora Connect, a platform that helps Kenyans in the diaspora manage tasks back home.
 
 When a customer sends a request, you must return a single valid JSON object with exactly these fields:
 
